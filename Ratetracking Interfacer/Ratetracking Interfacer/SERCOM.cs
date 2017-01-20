@@ -240,7 +240,9 @@ public class Sercom
     /// <param name="text">
     /// Input string.
     /// </param>
-    /// <returns></returns>
+    /// <returns>
+    /// Input string without controll characters.
+    /// </returns>
     static string RemoveLineEndings(string text)
     {
         StringBuilder newText = new StringBuilder();
