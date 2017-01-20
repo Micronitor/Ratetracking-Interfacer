@@ -113,9 +113,11 @@
             this.ConsoleText.MaxLength = 2000000;
             this.ConsoleText.Name = "ConsoleText";
             this.ConsoleText.ReadOnly = true;
+            this.ConsoleText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ConsoleText.Size = new System.Drawing.Size(530, 300);
             this.ConsoleText.TabIndex = 31;
             this.ConsoleText.Text = "";
+            this.ConsoleText.TextChanged += new System.EventHandler(this.ConsoleText_TextChanged);
             // 
             // sendMessage
             // 
@@ -126,6 +128,7 @@
             this.sendMessage.Name = "sendMessage";
             this.sendMessage.Size = new System.Drawing.Size(360, 20);
             this.sendMessage.TabIndex = 32;
+            this.sendMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sendMessage_KeyDown);
             // 
             // bt_send
             // 
